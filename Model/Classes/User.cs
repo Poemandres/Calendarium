@@ -7,10 +7,10 @@ public class User
 	{
 		Console.WriteLine("Clase plantilla, jaja");
 
-		private String username; 
-		private String password;
-		private int idUser;
-		private String email;
+		private int userID;
+		private String userEMAIL;
+		private String userNAME;
+		private String userPASSWORD;
 		
 	} 
 }

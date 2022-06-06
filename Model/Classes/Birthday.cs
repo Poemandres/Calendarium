@@ -7,9 +7,9 @@ public class User
 	{
 		Console.WriteLine("Clase plantilla, jaja");
 
-		private DateTime birthDay;
-		private String nombrePersona;
-		private int idPersona;
+		private int personID; 
+		private String personNAME;
+		private DateTime personBIRTHDATE;
 		
 	} 
 }
