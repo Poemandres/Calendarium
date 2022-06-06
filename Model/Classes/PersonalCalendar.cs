@@ -15,6 +15,7 @@ public class User
 		private int personalCalendarORDER;
 		private bool personalCalendarFIRST_DAY;
 		private int personalCalendarNEW_YEAR;
+		private int personalCalendarBASE_STRUCTURE;
 		private String personalCalendarMONTH_NAME1;
 		private String personalCalendarMONTH_NAME2;
 		private String personalCalendarMONTH_NAME3;

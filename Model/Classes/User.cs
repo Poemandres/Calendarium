@@ -11,6 +11,7 @@ public class User
 		private String userEMAIL;
 		private String userNAME;
 		private String userPASSWORD;
-		
+		private String language;
+
 	} 
 }

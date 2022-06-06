@@ -20,7 +20,7 @@ public class User
 		private int baseCalendarLEAP_DAY_MONTH;
 		private int baseCalendarLEAP_DAY_PLACE;
 		private int baseCalendarLEAP_DAY_START;
-		private int baseCalendarLEAP_DAY_SEPARATION;
+		private int baseCalendarLEAP_DAY_DISTANCE;
 		private String baseCalendarMONTH_NAME1;
 		private String baseCalendarMONTH_NAME2;
 		private String baseCalendarMONTH_NAME3;
