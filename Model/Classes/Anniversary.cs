@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class User
+public class Anniversary
 {
 
 	public static void Main()
@@ -13,6 +13,7 @@ public class User
 		private int anniversaryTYPE;
 		private bool anniversaryHOLIDAY;
 		private int anniversaryIMPORTANCE;
+		private int anniversaryICON;
 
 	} 
 }

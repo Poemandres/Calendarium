@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class User
+public class BaseCalendar
 {
 
 	public static void Main()

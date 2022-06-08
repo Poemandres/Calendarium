@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class User
+public class Birthday
 {
 
 	public static void Main()
