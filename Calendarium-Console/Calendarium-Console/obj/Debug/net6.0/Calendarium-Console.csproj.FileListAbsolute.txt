@@ -1,0 +1,15 @@
+C:\Users\Khalil\source\repos\Calendarium-Console\Calendarium-Console\bin\Debug\net6.0\Calendarium-Console.exe
+C:\Users\Khalil\source\repos\Calendarium-Console\Calendarium-Console\bin\Debug\net6.0\Calendarium-Console.deps.json
+C:\Users\Khalil\source\repos\Calendarium-Console\Calendarium-Console\bin\Debug\net6.0\Calendarium-Console.runtimeconfig.json
+C:\Users\Khalil\source\repos\Calendarium-Console\Calendarium-Console\bin\Debug\net6.0\Calendarium-Console.dll
+C:\Users\Khalil\source\repos\Calendarium-Console\Calendarium-Console\bin\Debug\net6.0\ref\Calendarium-Console.dll
+C:\Users\Khalil\source\repos\Calendarium-Console\Calendarium-Console\bin\Debug\net6.0\Calendarium-Console.pdb
+C:\Users\Khalil\source\repos\Calendarium-Console\Calendarium-Console\obj\Debug\net6.0\Calendarium-Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Khalil\source\repos\Calendarium-Console\Calendarium-Console\obj\Debug\net6.0\Calendarium-Console.AssemblyInfoInputs.cache
+C:\Users\Khalil\source\repos\Calendarium-Console\Calendarium-Console\obj\Debug\net6.0\Calendarium-Console.AssemblyInfo.cs
+C:\Users\Khalil\source\repos\Calendarium-Console\Calendarium-Console\obj\Debug\net6.0\Calendarium-Console.csproj.CoreCompileInputs.cache
+C:\Users\Khalil\source\repos\Calendarium-Console\Calendarium-Console\obj\Debug\net6.0\Calendarium-Console.dll
+C:\Users\Khalil\source\repos\Calendarium-Console\Calendarium-Console\obj\Debug\net6.0\ref\Calendarium-Console.dll
+C:\Users\Khalil\source\repos\Calendarium-Console\Calendarium-Console\obj\Debug\net6.0\Calendarium-Console.pdb
+C:\Users\Khalil\source\repos\Calendarium-Console\Calendarium-Console\obj\Debug\net6.0\Calendarium-Console.genruntimeconfig.cache
+C:\Users\Khalil\source\repos\Calendarium-Console\Calendarium-Console\obj\Debug\net6.0\Calendarium-Console.csproj.AssemblyReference.cache
