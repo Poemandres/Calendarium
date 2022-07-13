@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\op\\Documents\\GitHub\\Calendarium\\Calendarium-Web\\Calendarium\\Calendarium.csproj": {}
+    "C:\\Users\\aludesk\\Documents\\GitHub\\Calendarium\\Calendarium-Web\\Calendarium\\Calendarium.csproj": {}
   },
   "projects": {
-    "C:\\Users\\op\\Documents\\GitHub\\Calendarium\\Calendarium-Web\\Calendarium\\Calendarium.csproj": {
+    "C:\\Users\\aludesk\\Documents\\GitHub\\Calendarium\\Calendarium-Web\\Calendarium\\Calendarium.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\op\\Documents\\GitHub\\Calendarium\\Calendarium-Web\\Calendarium\\Calendarium.csproj",
+        "projectUniqueName": "C:\\Users\\aludesk\\Documents\\GitHub\\Calendarium\\Calendarium-Web\\Calendarium\\Calendarium.csproj",
         "projectName": "Calendarium",
-        "projectPath": "C:\\Users\\op\\Documents\\GitHub\\Calendarium\\Calendarium-Web\\Calendarium\\Calendarium.csproj",
-        "packagesPath": "C:\\Users\\op\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\op\\Documents\\GitHub\\Calendarium\\Calendarium-Web\\Calendarium\\obj\\",
+        "projectPath": "C:\\Users\\aludesk\\Documents\\GitHub\\Calendarium\\Calendarium-Web\\Calendarium\\Calendarium.csproj",
+        "packagesPath": "C:\\Users\\aludesk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aludesk\\Documents\\GitHub\\Calendarium\\Calendarium-Web\\Calendarium\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\op\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aludesk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
