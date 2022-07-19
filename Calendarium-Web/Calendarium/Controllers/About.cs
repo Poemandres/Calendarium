@@ -2,7 +2,7 @@
 
 namespace Calendarium.Controllers
 {
-    public class HomeController1 : Controller
+    public class About : Controller
     {
         public IActionResult Index()
         {

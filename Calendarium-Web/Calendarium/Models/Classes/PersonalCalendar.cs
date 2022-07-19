@@ -9,7 +9,7 @@ public class PersonalCalendar
 		private String? personalCalendarGROUP {get; set;}
 		private String? personalCalendarURL {get; set;}
 		private bool personalCalendarFIRST_DAY {get; set;}
-		private int personalCalendarNEW_YEAR {get; set;}
+		private DateTime personalCalendarNEW_YEAR {get; set;}
 		private int personalCalendarBASE_STRUCTURE {get; set; }
 		private String? personalCalendarDAY_NAME1 { get; set; }
 		private String? personalCalendarDAY_NAME2 { get; set; }
@@ -18,6 +18,11 @@ public class PersonalCalendar
 		private String? personalCalendarDAY_NAME5 { get; set; }
 		private String? personalCalendarDAY_NAME6 { get; set; }
 		private String? personalCalendarDAY_NAME7 { get; set; }
+		private String? personalCalendarDAY_NAME8 { get; set; }
+		private String? personalCalendarDAY_NAME9 { get; set; }
+		private String? personalCalendarDAY_NAME10 { get; set; }
+		private String? personalCalendarDAY_NAME11 { get; set; }
+		private String? personalCalendarDAY_NAME12 { get; set; }
 		private String? personalCalendarMONTH_NAME1 {get; set;}
 		private String? personalCalendarMONTH_NAME2 {get; set;}
 		private String? personalCalendarMONTH_NAME3 {get; set;}
@@ -41,8 +46,8 @@ public class PersonalCalendar
 
 	public PersonalCalendar(int personalCalendarID, String personalCalendarNAME, int personalCalendarCATEGORY, String personalCalendarGROUP, String personalCalendarURL,
 		bool personalCalendarFIRST_DAY, int personalCalendarNEW_YEAR, int personalCalendarBASE_STRUCTURE,
-		String personalCalendarDAY_NAME1, String personalCalendarDAY_NAME2, String personalCalendarDAY_NAME3, String personalCalendarDAY_NAME4, String personalCalendarDAY_NAME5,
-		String personalCalendarDAY_NAME6, String personalCalendarDAY_NAME7,
+		String personalCalendarDAY_NAME1, String personalCalendarDAY_NAME2, String personalCalendarDAY_NAME3, String personalCalendarDAY_NAME4, String personalCalendarDAY_NAME5, String personalCalendarDAY_NAME6,
+		String personalCalendarDAY_NAME7, String personalCalendarDAY_NAME8, String personalCalendarDAY_NAME9, String personalCalendarDAY_NAME10,String personalCalendarDAY_NAME11,String personalCalendarDAY_NAME12,
 		String personalCalendarMONTH_NAME1, String personalCalendarMONTH_NAME2, String personalCalendarMONTH_NAME3, String personalCalendarMONTH_NAME4, String personalCalendarMONTH_NAME5,
 		String personalCalendarMONTH_NAME6, String personalCalendarMONTH_NAME7, String personalCalendarMONTH_NAME8, String personalCalendarMONTH_NAME9, String personalCalendarMONTH_NAME10,
 		String personalCalendarMONTH_NAME11, String personalCalendarMONTH_NAME12, String personalCalendarMONTH_NAME13, String personalCalendarMONTH_NAME14, String personalCalendarMONTH_NAME15,
@@ -62,6 +67,11 @@ public class PersonalCalendar
 		this.personalCalendarDAY_NAME5 = personalCalendarDAY_NAME5;
 		this.personalCalendarDAY_NAME6 = personalCalendarDAY_NAME6;
 		this.personalCalendarDAY_NAME7 = personalCalendarDAY_NAME7;
+		this.personalCalendarDAY_NAME8 = personalCalendarDAY_NAME8;
+		this.personalCalendarDAY_NAME9 = personalCalendarDAY_NAME9;
+		this.personalCalendarDAY_NAME10 = personalCalendarDAY_NAME10;
+		this.personalCalendarDAY_NAME11 = personalCalendarDAY_NAME11;
+		this.personalCalendarDAY_NAME12 = personalCalendarDAY_NAME12;
 		this.personalCalendarMONTH_NAME1 = personalCalendarMONTH_NAME1;
 		this.personalCalendarMONTH_NAME2 = personalCalendarMONTH_NAME2;
 		this.personalCalendarMONTH_NAME3 = personalCalendarMONTH_NAME3;

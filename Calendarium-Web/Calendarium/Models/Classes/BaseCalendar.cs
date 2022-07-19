@@ -10,9 +10,10 @@ public class BaseCalendar
 		private String? baseCalendarURL {get; set;} 
 		private int baseCalendarORDER {get; set;} 
 		private bool baseCalendarFIRST_DAY {get; set;} 
-		private int baseCalendarNEW_YEAR {get; set;} 
-		private int baseCalendarICON {get; set;} 
-		private int baseCalendarMONTH_AMOUNT {get; set;} 
+		private DateTime baseCalendarNEW_YEAR {get; set;} 
+		private String? baseCalendarICON {get; set;} 
+		private int baseCalendarMONTH_AMOUNT {get; set; }
+		private int baseCalendarDAY_AMOUNT { get; set; }
 		private int baseCalendarLEAP_DAY_MONTH {get; set;} 
 		private int baseCalendarLEAP_DAY_PLACE {get; set;} 
 		private int baseCalendarLEAP_DAY_START {get; set;} 
@@ -24,8 +25,13 @@ public class BaseCalendar
 		private String? baseCalendarDAY_NAME5 { get; set; }
 		private String? baseCalendarDAY_NAME6 { get; set; }
 		private String? baseCalendarDAY_NAME7 { get; set; }
-		private String? baseCalendarMONTH_NAME1 {get; set;} 
-		private String? baseCalendarMONTH_NAME2 {get; set;} 
+		private String? baseCalendarDAY_NAME8 { get; set; }
+		private String? baseCalendarDAY_NAME9 { get; set; }
+		private String? baseCalendarDAY_NAME10 { get; set; }
+		private String? baseCalendarDAY_NAME11 { get; set; }
+		private String? baseCalendarDAY_NAME12 { get; set; }
+		private String? baseCalendarMONTH_NAME1 { get; set; }
+		private String? baseCalendarMONTH_NAME2 { get; set; }
 		private String? baseCalendarMONTH_NAME3 {get; set;} 
 		private String? baseCalendarMONTH_NAME4 {get; set;} 
 		private String? baseCalendarMONTH_NAME5 {get; set;} 
@@ -66,10 +72,10 @@ public class BaseCalendar
 		private int baseCalendarMONTH_DURATION20 {get; set;} 
 	
 	public BaseCalendar(int baseCalendarID, String baseCalendarNAME, int baseCalendarCATEGORY, String baseCalendarGROUP, String baseCalendarURL, int baseCalendarORDER, 
-		bool baseCalendarFIRST_DAY, int baseCalendarNEW_YEAR, int baseCalendarICON, int baseCalendarMONTH_AMOUNT, int baseCalendarLEAP_DAY_MONTH, int baseCalendarLEAP_DAY_PLACE,
+		bool baseCalendarFIRST_DAY, int baseCalendarNEW_YEAR, String baseCalendarICON, int baseCalendarMONTH_AMOUNT, int baseCalendarDAY_AMOUNT, int baseCalendarLEAP_DAY_MONTH, int baseCalendarLEAP_DAY_PLACE,
 		int baseCalendarLEAP_DAY_START, int baseCalendarLEAP_DAY_DISTANCE,
-		String baseCalendarDAY_NAME1, String baseCalendarDAY_NAME2, String baseCalendarDAY_NAME3, String baseCalendarDAY_NAME4, String baseCalendarDAY_NAME5,
-		String baseCalendarDAY_NAME6, String baseCalendarDAY_NAME7,
+		String baseCalendarDAY_NAME1, String baseCalendarDAY_NAME2, String baseCalendarDAY_NAME3, String baseCalendarDAY_NAME4, String baseCalendarDAY_NAME5, String baseCalendarDAY_NAME6,
+		String baseCalendarDAY_NAME7, String baseCalendarDAY_NAME8, String baseCalendarDAY_NAME9, String baseCalendarDAY_NAME10,String baseCalendarDAY_NAME11,String baseCalendarDAY_NAME12,
 		String baseCalendarMONTH_NAME1, String baseCalendarMONTH_NAME2, String baseCalendarMONTH_NAME3, String baseCalendarMONTH_NAME4, String baseCalendarMONTH_NAME5,
 		String baseCalendarMONTH_NAME6, String baseCalendarMONTH_NAME7, String baseCalendarMONTH_NAME8, String baseCalendarMONTH_NAME9, String baseCalendarMONTH_NAME10,
 		String baseCalendarMONTH_NAME11, String baseCalendarMONTH_NAME12, String baseCalendarMONTH_NAME13, String baseCalendarMONTH_NAME14, String baseCalendarMONTH_NAME15,
@@ -88,6 +94,7 @@ public class BaseCalendar
 		this.baseCalendarNEW_YEAR = baseCalendarNEW_YEAR;
 		this.baseCalendarICON = baseCalendarICON;
 		this.baseCalendarMONTH_AMOUNT = baseCalendarMONTH_AMOUNT;
+		this.baseCalendarDAY_AMOUNT = baseCalendarDAY_AMOUNT;
 		this.baseCalendarLEAP_DAY_MONTH = baseCalendarLEAP_DAY_MONTH;
 		this.baseCalendarLEAP_DAY_PLACE = baseCalendarLEAP_DAY_PLACE;
 		this.baseCalendarLEAP_DAY_START = baseCalendarLEAP_DAY_START;
@@ -99,6 +106,11 @@ public class BaseCalendar
 		this.baseCalendarDAY_NAME5 = baseCalendarDAY_NAME5;
 		this.baseCalendarDAY_NAME6 = baseCalendarDAY_NAME6;
 		this.baseCalendarDAY_NAME7 = baseCalendarDAY_NAME7;
+		this.baseCalendarDAY_NAME8 = baseCalendarDAY_NAME8;
+		this.baseCalendarDAY_NAME9 = baseCalendarDAY_NAME9;
+		this.baseCalendarDAY_NAME10 = baseCalendarDAY_NAME10;
+		this.baseCalendarDAY_NAME11 = baseCalendarDAY_NAME11;
+		this.baseCalendarDAY_NAME12 = baseCalendarDAY_NAME12;
 		this.baseCalendarMONTH_NAME1 = baseCalendarMONTH_NAME1;
 		this.baseCalendarMONTH_NAME2 = baseCalendarMONTH_NAME2;
 		this.baseCalendarMONTH_NAME3 = baseCalendarMONTH_NAME3;
