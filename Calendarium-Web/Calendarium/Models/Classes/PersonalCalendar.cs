@@ -45,7 +45,7 @@ public class PersonalCalendar
 		private String? personalCalendarMONTH_NAME20 { get; set; }
 
 	public PersonalCalendar(int personalCalendarID, String personalCalendarNAME, int personalCalendarCATEGORY, String personalCalendarGROUP, String personalCalendarURL,
-		bool personalCalendarFIRST_DAY, int personalCalendarNEW_YEAR, int personalCalendarBASE_STRUCTURE,
+		bool personalCalendarFIRST_DAY, DateTime personalCalendarNEW_YEAR, int personalCalendarBASE_STRUCTURE,
 		String personalCalendarDAY_NAME1, String personalCalendarDAY_NAME2, String personalCalendarDAY_NAME3, String personalCalendarDAY_NAME4, String personalCalendarDAY_NAME5, String personalCalendarDAY_NAME6,
 		String personalCalendarDAY_NAME7, String personalCalendarDAY_NAME8, String personalCalendarDAY_NAME9, String personalCalendarDAY_NAME10,String personalCalendarDAY_NAME11,String personalCalendarDAY_NAME12,
 		String personalCalendarMONTH_NAME1, String personalCalendarMONTH_NAME2, String personalCalendarMONTH_NAME3, String personalCalendarMONTH_NAME4, String personalCalendarMONTH_NAME5,

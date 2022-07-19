@@ -72,7 +72,7 @@ public class BaseCalendar
 		private int baseCalendarMONTH_DURATION20 {get; set;} 
 	
 	public BaseCalendar(int baseCalendarID, String baseCalendarNAME, int baseCalendarCATEGORY, String baseCalendarGROUP, String baseCalendarURL, int baseCalendarORDER, 
-		bool baseCalendarFIRST_DAY, int baseCalendarNEW_YEAR, String baseCalendarICON, int baseCalendarMONTH_AMOUNT, int baseCalendarDAY_AMOUNT, int baseCalendarLEAP_DAY_MONTH, int baseCalendarLEAP_DAY_PLACE,
+		bool baseCalendarFIRST_DAY, DateTime baseCalendarNEW_YEAR, String baseCalendarICON, int baseCalendarMONTH_AMOUNT, int baseCalendarDAY_AMOUNT, int baseCalendarLEAP_DAY_MONTH, int baseCalendarLEAP_DAY_PLACE,
 		int baseCalendarLEAP_DAY_START, int baseCalendarLEAP_DAY_DISTANCE,
 		String baseCalendarDAY_NAME1, String baseCalendarDAY_NAME2, String baseCalendarDAY_NAME3, String baseCalendarDAY_NAME4, String baseCalendarDAY_NAME5, String baseCalendarDAY_NAME6,
 		String baseCalendarDAY_NAME7, String baseCalendarDAY_NAME8, String baseCalendarDAY_NAME9, String baseCalendarDAY_NAME10,String baseCalendarDAY_NAME11,String baseCalendarDAY_NAME12,
