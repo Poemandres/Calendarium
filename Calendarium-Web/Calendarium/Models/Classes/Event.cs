@@ -1,9 +1,13 @@
 ﻿using System;
+using MySql.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
+namespace MysqlProject.Models
+{
 public class Event
 {
 
-		private int eventID {get; set;}
+		private int ID {get; set;}
 		private String? eventNAME {get; set;}
 		private DateTime eventDATE {get; set;}
 		private int eventTYPE {get; set;}
@@ -12,8 +16,8 @@ public class Event
 		private int eventIMPORTANCE {get; set;}
 		private String? eventICON {get; set;}
 
-	public Event(int eventID, String eventNAME, DateTime eventDATE, int eventTYPE, int eventCATEGORY, bool eventHOLIDAY, int eventIMPORTANCE, String eventICON) { 
-		this.eventID = eventID;
+	public Event(int ID, String eventNAME, DateTime eventDATE, int eventTYPE, int eventCATEGORY, bool eventHOLIDAY, int eventIMPORTANCE, String eventICON) { 
+		this.ID = ID;
 		this.eventNAME = eventNAME;
 		this.eventDATE = eventDATE;
 		this.eventTYPE = eventTYPE;
@@ -29,4 +33,13 @@ public class Event
 		Console.WriteLine($"El evento en cuestión es el {eventNAME}.");
 		Console.WriteLine($"''{eventNAME}'' es el valor de la variable eventNAME en esta instancia de la clase Event! :D");
 	}
+}
+public class EventContext : DbContext
+    {
+        public DbSet<Event> db-events { get; set; }
+
+        protected override void  OnConfiguring(DbContextOptionsBuilder optionBuilder)
+        {
+            optionBuilder.UseMySQL("server=localhost;database=calendarium;user=root;password=");
+        }
 }

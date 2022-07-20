@@ -13,6 +13,15 @@ namespace Calendarium.Controllers
             _logger = logger;
         }
 
+        var db = new UserContext();
+        var usuarios = db.User.ToList();
+        ViewBag.Usuarios = usuarios;
+        <div>Usuarios ! </div>
+        @for( int i = 0; i < ViewBag.Usuarios.Count; i++){
+        <span>@ViewBag.Usuarios[i].userEMAIL -- @ViewBag.Personas[i].userNAME 
+        </span>
+}
+
         public IActionResult Index()
         {
             return View();

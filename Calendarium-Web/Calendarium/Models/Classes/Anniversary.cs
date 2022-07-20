@@ -1,6 +1,10 @@
 ﻿using System;
+using MySql.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
-public class Anniversary
+namespace MysqlProject.Models
+{
+	public class Anniversary
 {
 
 	private int anniversaryID { get; set; }
@@ -25,3 +29,12 @@ public class Anniversary
 	}
 
 }
+	public class AnniversaryContext : DbContext
+    {
+        public DbSet<Anniversary> db-anniversaries { get; set; }
+
+        protected override void  OnConfiguring(DbContextOptionsBuilder optionBuilder)
+        {
+            optionBuilder.UseMySQL("server=localhost;database=calendarium;user=root;password=");
+        }
+    }

@@ -1,9 +1,13 @@
 ﻿using System;
+using MySql.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
+namespace MysqlProject.Models
+{
 public class CustomEvent
 {
 
-		private int customEventID {get; set;}
+		private int ID {get; set;}
 		private String? customEventNAME {get; set;}
 		private DateTime customEventDATE {get; set;}
 		private int customEventTYPE {get; set;}
@@ -12,9 +16,9 @@ public class CustomEvent
 		private int customEventIMPORTANCE {get; set;}
 		private String customEventICON {get; set;}
 
-	public CustomEvent(int customEventID, String customEventNAME, DateTime customEventDATE, int customEventTYPE, int customEventCATEGORY, bool customEventHOLIDAY, 
+	public CustomEvent(int ID, String customEventNAME, DateTime customEventDATE, int customEventTYPE, int customEventCATEGORY, bool customEventHOLIDAY, 
 		int customEventIMPORTANCE, String customEventICON) {
-		this.customEventID = customEventID;
+		this.ID = ID;
 		this.customEventNAME = customEventNAME;
 		this.customEventDATE = customEventDATE;
 		this.customEventTYPE = customEventTYPE;
@@ -23,5 +27,16 @@ public class CustomEvent
 		this.customEventIMPORTANCE = customEventIMPORTANCE;
 		this.customEventICON = customEventICON;
 	}
+
+}
+	public class CustomEventContext : DbContext
+    {
+        public DbSet<CustomEvent> db-customevents { get; set; }
+
+        protected override void  OnConfiguring(DbContextOptionsBuilder optionBuilder)
+        {
+            optionBuilder.UseMySQL("server=localhost;database=calendarium;user=root;password=");
+        }
+
 
 }

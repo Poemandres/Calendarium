@@ -1,9 +1,13 @@
 ﻿using System;
+using MySql.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
+namespace MysqlProject.Models
+{
 public class PersonalCalendar
 {
 
-		private int personalCalendarID {get; set;}
+		private int ID {get; set;}
 		private String? personalCalendarNAME {get; set;}
 		private int personalCalendarCATEGORY {get; set;}
 		private String? personalCalendarGROUP {get; set;}
@@ -44,7 +48,7 @@ public class PersonalCalendar
 		private String? personalCalendarMONTH_NAME19 { get; set; }
 		private String? personalCalendarMONTH_NAME20 { get; set; }
 
-	public PersonalCalendar(int personalCalendarID, String personalCalendarNAME, int personalCalendarCATEGORY, String personalCalendarGROUP, String personalCalendarURL,
+	public PersonalCalendar(int ID, String personalCalendarNAME, int personalCalendarCATEGORY, String personalCalendarGROUP, String personalCalendarURL,
 		bool personalCalendarFIRST_DAY, DateTime personalCalendarNEW_YEAR, int personalCalendarBASE_STRUCTURE,
 		String personalCalendarDAY_NAME1, String personalCalendarDAY_NAME2, String personalCalendarDAY_NAME3, String personalCalendarDAY_NAME4, String personalCalendarDAY_NAME5, String personalCalendarDAY_NAME6,
 		String personalCalendarDAY_NAME7, String personalCalendarDAY_NAME8, String personalCalendarDAY_NAME9, String personalCalendarDAY_NAME10,String personalCalendarDAY_NAME11,String personalCalendarDAY_NAME12,
@@ -52,7 +56,7 @@ public class PersonalCalendar
 		String personalCalendarMONTH_NAME6, String personalCalendarMONTH_NAME7, String personalCalendarMONTH_NAME8, String personalCalendarMONTH_NAME9, String personalCalendarMONTH_NAME10,
 		String personalCalendarMONTH_NAME11, String personalCalendarMONTH_NAME12, String personalCalendarMONTH_NAME13, String personalCalendarMONTH_NAME14, String personalCalendarMONTH_NAME15,
 		String personalCalendarMONTH_NAME16, String personalCalendarMONTH_NAME17, String personalCalendarMONTH_NAME18, String personalCalendarMONTH_NAME19, String personalCalendarMONTH_NAME20){
-		this.personalCalendarID = personalCalendarID;
+		this.ID = ID;
 		this.personalCalendarNAME = personalCalendarNAME;
 		this.personalCalendarCATEGORY = personalCalendarCATEGORY;
 		this.personalCalendarGROUP = personalCalendarGROUP;
@@ -94,4 +98,14 @@ public class PersonalCalendar
 		this.personalCalendarMONTH_NAME20 = personalCalendarMONTH_NAME20;
 
 	}
+}
+	public class PersonalCalendarContext : DbContext
+    {
+        public DbSet<PersonalCalendar> db-personalcalendars { get; set; }
+
+        protected override void  OnConfiguring(DbContextOptionsBuilder optionBuilder)
+        {
+            optionBuilder.UseMySQL("server=localhost;database=calendarium;user=root;password=");
+        }
+
 }

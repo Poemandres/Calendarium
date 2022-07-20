@@ -1,5 +1,9 @@
 ﻿using System;
+using MySql.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
+namespace MysqlProject.Models
+{
 public class BaseCalendar
 {
 
@@ -153,6 +157,14 @@ public class BaseCalendar
 		this.baseCalendarMONTH_DURATION20 = baseCalendarMONTH_DURATION20;
 
 	}
+		}
+	public class BaseCalendarContext : DbContext
+    {
+        public DbSet<BaseCalendar> db-basecalendars { get; set; }
 
+        protected override void  OnConfiguring(DbContextOptionsBuilder optionBuilder)
+        {
+            optionBuilder.UseMySQL("server=localhost;database=calendarium;user=root;password=");
+        }
 
 }

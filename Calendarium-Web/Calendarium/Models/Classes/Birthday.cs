@@ -1,19 +1,41 @@
 ﻿using System;
+using MySql.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
+namespace MysqlProject.Models
+{
 public class Birthday
 {
 
-		private int personID {get; set;} 
-		private String? personNAME {get; set;} 
-		private DateTime personBIRTHDATE {get; set;}
-		private int personBIRTHYEAR { get; set; }
+		private int ID {get; set;} 
+		private String? birthdayNAME {get; set;} 
+		private DateTime birthdayBIRTHDATE {get; set;}
+		private int birthdayBIRTHYEAR { get; set; }
 
 
-	public Birthday(int personID, String personNAME, DateTime personBIRTHDATE, int personBIRTHYEAR) { 
-		this.personID = personID;
-		this.personNAME = personNAME;
-		this.personBIRTHDATE = personBIRTHDATE;
-		this.personBIRTHYEAR = personBIRTHYEAR;
+	public Birthday(int ID, String birthdayNAME, DateTime birthdayBIRTHDATE, int birthdayBIRTHYEAR) { 
+		this.ID = ID;
+		this.birthdayNAME = birthdayNAME;
+		this.birthdayBIRTHDATE = birthdayBIRTHDATE;
+		this.birthdayBIRTHYEAR = birthdayBIRTHYEAR;
 	}
+	public class BirthdayContext : DbContext
+    {
+        public DbSet<Birthday> db-birthdays { get; set; }
+
+        protected override void  OnConfiguring(DbContextOptionsBuilder optionBuilder)
+        {
+            optionBuilder.UseMySQL("server=localhost;database=calendarium;user=root;password=");
+        }
+}
+	public class BirthdayContext : DbContext
+    {
+        public DbSet<Birthday> db-birthdays { get; set; }
+
+        protected override void  OnConfiguring(DbContextOptionsBuilder optionBuilder)
+        {
+            optionBuilder.UseMySQL("server=localhost;database=calendarium;user=root;password=");
+        }
+
 
 }
