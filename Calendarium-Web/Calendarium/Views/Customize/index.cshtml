@@ -24,7 +24,23 @@
     <title>Personalizar Calendario</title>
   </head>
   <body>
-   
+   <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="botonEnumeracion" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Enumeración
+  </button>
+  <div class="dropdown-menu" aria-labelledby="botonEnumeracion">
+    <a class="dropdown-item" href="#">Solar</a>
+    <a class="dropdown-item" href="#">Lunar</a>
+  </div>
+   <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="botonPrimerDia" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" text-align: right>
+    Primer día de la semana
+  </button>
+  <div class="dropdown-menu" aria-labelledby="botonPrimerDia">
+    <a class="dropdown-item" href="#">Domingo</a>
+    <a class="dropdown-item" href="#">Lunes</a>
+  </div>
+</div>
 
   <div>
     <div id='calendar'></div>
@@ -47,8 +63,12 @@
     var calendar = new FullCalendar.Calendar(calendarEl, {
       plugins: [ 'interaction', 'dayGrid' ],
       defaultDate: '2022-07-12',
+      firstDay: 1, // DÍA DE INICIO DE SEMANA
       editable: true,
+      dayNames: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 
+           'Thursday', 'Friday', 'Saturday'],
       eventLimit: true, // allow "more" link when too many events
+
       events: [
         {
           title: 'All Day Event',

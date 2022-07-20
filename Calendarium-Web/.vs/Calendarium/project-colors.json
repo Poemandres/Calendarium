@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e646145b-e970-419c-aef4-fba759c66d64": {
+      "ProjectGuid": "e646145b-e970-419c-aef4-fba759c66d64",
+      "DisplayName": "Calendarium",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
