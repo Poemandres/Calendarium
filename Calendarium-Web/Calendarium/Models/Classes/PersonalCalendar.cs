@@ -101,11 +101,11 @@ public class PersonalCalendar
 }
 	public class PersonalCalendarContext : DbContext
     {
-        public DbSet<PersonalCalendar> db-personalcalendars { get; set; }
+        public DbSet<PersonalCalendar> dbpersonalcalendars { get; set; }
 
         protected override void  OnConfiguring(DbContextOptionsBuilder optionBuilder)
         {
             optionBuilder.UseMySQL("server=localhost;database=calendarium;user=root;password=");
         }
 
-}
+}}

@@ -31,7 +31,7 @@ public class CustomEvent
 }
 	public class CustomEventContext : DbContext
     {
-        public DbSet<CustomEvent> db-customevents { get; set; }
+        public DbSet<CustomEvent> dbcustomevents { get; set; }
 
         protected override void  OnConfiguring(DbContextOptionsBuilder optionBuilder)
         {
@@ -39,4 +39,4 @@ public class CustomEvent
         }
 
 
-}
+}}

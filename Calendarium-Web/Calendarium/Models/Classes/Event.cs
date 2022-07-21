@@ -36,10 +36,10 @@ public class Event
 }
 public class EventContext : DbContext
     {
-        public DbSet<Event> db-events { get; set; }
+        public DbSet<Event> dbevents { get; set; }
 
         protected override void  OnConfiguring(DbContextOptionsBuilder optionBuilder)
         {
             optionBuilder.UseMySQL("server=localhost;database=calendarium;user=root;password=");
         }
-}
+}}

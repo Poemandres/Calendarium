@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Calendarium",
+    "\\Calendarium\\Models",
+    "\\Calendarium\\Models\\Classes",
     "\\Calendarium\\Views",
-    "\\Calendarium\\Views\\Saludo"
+    "\\Calendarium\\Views\\About"
   ],
-  "SelectedNode": "\\Calendarium\\Views\\Saludo\\Mensaje.cshtml",
+  "SelectedNode": "\\Calendarium\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

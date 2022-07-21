@@ -6,3 +6,12 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+        var db = new UserContext();
+        var usuarios = db.User.ToList();
+        ViewBag.Usuarios = usuarios;
+        <div>Usuarios ! </div>
+        @for( int i = 0; i < ViewBag.Usuarios.Count; i++){
+        <span>@ViewBag.Usuarios[i].userEMAIL -- @ViewBag.Personas[i].userNAME 
+        </span>
+}

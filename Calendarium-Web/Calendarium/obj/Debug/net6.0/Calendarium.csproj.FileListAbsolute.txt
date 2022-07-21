@@ -102,3 +102,15 @@ C:\Users\Khalil\Documents\GitHub\Calendarium\Calendarium-Web\Calendarium\obj\Deb
 C:\Users\Khalil\Documents\GitHub\Calendarium\Calendarium-Web\Calendarium\obj\Debug\net6.0\ref\Calendarium.dll
 C:\Users\Khalil\Documents\GitHub\Calendarium\Calendarium-Web\Calendarium\obj\Debug\net6.0\Calendarium.pdb
 C:\Users\Khalil\Documents\GitHub\Calendarium\Calendarium-Web\Calendarium\obj\Debug\net6.0\Calendarium.genruntimeconfig.cache
+C:\Users\Khalil\Documents\GitHub\Calendarium\Calendarium-Web\Calendarium\bin\Debug\net6.0\Controllers\BootStrap\calendar-19\fonts\icomoon\selection.json
+C:\Users\Khalil\Documents\GitHub\Calendarium\Calendarium-Web\Calendarium\bin\Debug\net6.0\Controllers\BootStrap\calendar-19\fullcalendar\packages\bootstrap\package.json
+C:\Users\Khalil\Documents\GitHub\Calendarium\Calendarium-Web\Calendarium\bin\Debug\net6.0\Controllers\BootStrap\calendar-19\fullcalendar\packages\core\package.json
+C:\Users\Khalil\Documents\GitHub\Calendarium\Calendarium-Web\Calendarium\bin\Debug\net6.0\Controllers\BootStrap\calendar-19\fullcalendar\packages\daygrid\package.json
+C:\Users\Khalil\Documents\GitHub\Calendarium\Calendarium-Web\Calendarium\bin\Debug\net6.0\Controllers\BootStrap\calendar-19\fullcalendar\packages\google-calendar\package.json
+C:\Users\Khalil\Documents\GitHub\Calendarium\Calendarium-Web\Calendarium\bin\Debug\net6.0\Controllers\BootStrap\calendar-19\fullcalendar\packages\interaction\package.json
+C:\Users\Khalil\Documents\GitHub\Calendarium\Calendarium-Web\Calendarium\bin\Debug\net6.0\Controllers\BootStrap\calendar-19\fullcalendar\packages\list\package.json
+C:\Users\Khalil\Documents\GitHub\Calendarium\Calendarium-Web\Calendarium\bin\Debug\net6.0\Controllers\BootStrap\calendar-19\fullcalendar\packages\luxon\package.json
+C:\Users\Khalil\Documents\GitHub\Calendarium\Calendarium-Web\Calendarium\bin\Debug\net6.0\Controllers\BootStrap\calendar-19\fullcalendar\packages\moment-timezone\package.json
+C:\Users\Khalil\Documents\GitHub\Calendarium\Calendarium-Web\Calendarium\bin\Debug\net6.0\Controllers\BootStrap\calendar-19\fullcalendar\packages\moment\package.json
+C:\Users\Khalil\Documents\GitHub\Calendarium\Calendarium-Web\Calendarium\bin\Debug\net6.0\Controllers\BootStrap\calendar-19\fullcalendar\packages\rrule\package.json
+C:\Users\Khalil\Documents\GitHub\Calendarium\Calendarium-Web\Calendarium\bin\Debug\net6.0\Controllers\BootStrap\calendar-19\fullcalendar\packages\timegrid\package.json
