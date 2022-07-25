@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "dayjs": "^1.11.4",
+    "react-bootstrap-typeahead": "^6.0.0-rc.3"
+  },
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "del": "3.0.0"
+  }
+}

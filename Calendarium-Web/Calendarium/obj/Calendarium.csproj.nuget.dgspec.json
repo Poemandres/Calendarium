@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Khalil\\Documents\\GitHub\\Calendarium\\Calendarium-Web\\Calendarium\\Calendarium.csproj": {}
+    "C:\\Users\\Khalil\\Documents\\GitHub\\Calendarium4\\Calendarium\\Calendarium\\Calendarium.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Khalil\\Documents\\GitHub\\Calendarium\\Calendarium-Web\\Calendarium\\Calendarium.csproj": {
+    "C:\\Users\\Khalil\\Documents\\GitHub\\Calendarium4\\Calendarium\\Calendarium\\Calendarium.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Khalil\\Documents\\GitHub\\Calendarium\\Calendarium-Web\\Calendarium\\Calendarium.csproj",
+        "projectUniqueName": "C:\\Users\\Khalil\\Documents\\GitHub\\Calendarium4\\Calendarium\\Calendarium\\Calendarium.csproj",
         "projectName": "Calendarium",
-        "projectPath": "C:\\Users\\Khalil\\Documents\\GitHub\\Calendarium\\Calendarium-Web\\Calendarium\\Calendarium.csproj",
+        "projectPath": "C:\\Users\\Khalil\\Documents\\GitHub\\Calendarium4\\Calendarium\\Calendarium\\Calendarium.csproj",
         "packagesPath": "C:\\Users\\Khalil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Khalil\\Documents\\GitHub\\Calendarium\\Calendarium-Web\\Calendarium\\obj\\",
+        "outputPath": "C:\\Users\\Khalil\\Documents\\GitHub\\Calendarium4\\Calendarium\\Calendarium\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Visual Studio\\Components\\NuGetPackages"
@@ -43,6 +43,20 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Node.js": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

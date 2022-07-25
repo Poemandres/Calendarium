@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "name": "monthly-calendar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.4",
+    "react-bootstrap-typeahead": "^6.0.0-rc.3"
+  }
+}

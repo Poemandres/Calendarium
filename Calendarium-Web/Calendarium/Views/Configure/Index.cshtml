@@ -1,8 +1,36 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="@Href("~/Views/BootStrap/calendar-19/fonts/icomoon/style.css")">
+  
+    <link href="@Href("~/Views/BootStrap/calendar-19/fullcalendar/packages/core/main.css")" rel='stylesheet' />
+    <link href="@Href("~/Views/BootStrap/calendar-19/fullcalendar/packages/daygrid/main.css")" rel='stylesheet' />
+    
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="@Href("~/Views/BootStrap/calendar-19/css/bootstrap.min.css")">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="@Href("~/Views/BootStrap/calendar-19/css/style.css")"></head>
+
 
 <div class="text-center">
     <h1 class="display-4">Configuración</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+   <div class="dropdown">
+     <button class="btn btn-secondary dropdown-toggle" type="button" id="botonIdioma" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Idioma
+  </button>
+  <div class="dropdown-menu" aria-labelledby="botonIdioma">
+    <a class="dropdown-item" href="#">Español</a>
+    <a class="dropdown-item" href="#">English</a>
+  </div>
+</div>
 </div>

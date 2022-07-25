@@ -12,6 +12,6 @@
         ViewBag.Usuarios = usuarios;
         <div>Usuarios ! </div>
         @for( int i = 0; i < ViewBag.Usuarios.Count; i++){
-        <span>@ViewBag.Usuarios[i].userEMAIL -- @ViewBag.Personas[i].userNAME 
+        <span>@ViewBag.Usuarios[i].userID -- @ViewBag.Personas[i].userEMAIL  -- @ViewBag.Personas[i].userNAME  -- @ViewBag.Personas[i].userPASSWORD  -- @ViewBag.Personas[i].userLANGUAGE 
         </span>
 }
