@@ -8,11 +8,11 @@ namespace MysqlProject.Models
 	{
 
 
-		private int ID { get; set; }
-		private String? userEMAIL { get; set; }
-		private String? userNAME { get; set; }
-		private String? userPASSWORD { get; set; }
-		private String? userLANGUAGE { get; set; }
+		public int ID { get; set; }
+		public String? userEMAIL { get; set; }
+		public String? userNAME { get; set; }
+		public String? userPASSWORD { get; set; }
+		public String? userLANGUAGE { get; set; }
 
 		public User(int ID, String userEMAIL, String userNAME, String userPASSWORD, String userLANGUAGE)
 		{
@@ -27,7 +27,7 @@ namespace MysqlProject.Models
 	}
 	public class UserContext : DbContext
 	{
-		public DbSet<User> dbusers { get; set; }
+		public DbSet<User> user { get; set; }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
 		{
