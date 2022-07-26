@@ -7,14 +7,14 @@ namespace MysqlProject.Models
 public class CustomEvent
 {
 
-		private int ID {get; set;}
-		private String? customEventNAME {get; set;}
-		private DateTime customEventDATE {get; set;}
-		private int customEventTYPE {get; set;}
-		private int customEventCATEGORY {get; set;}
-		private bool customEventHOLIDAY {get; set;}
-		private int customEventIMPORTANCE {get; set;}
-		private String customEventICON {get; set;}
+		public int ID {get; set;}
+		public String? customEventNAME {get; set;}
+		public DateTime customEventDATE {get; set;}
+		public int customEventTYPE {get; set;}
+		public int customEventCATEGORY {get; set;}
+		public bool customEventHOLIDAY {get; set;}
+		public int customEventIMPORTANCE {get; set;}
+		public String customEventICON {get; set;}
 
 	public CustomEvent(int ID, String customEventNAME, DateTime customEventDATE, int customEventTYPE, int customEventCATEGORY, bool customEventHOLIDAY, 
 		int customEventIMPORTANCE, String customEventICON) {

@@ -27,7 +27,7 @@ namespace MysqlProject.Models
 	}
 	public class UserContext : DbContext
 	{
-		public DbSet<User> user { get; set; }
+		public DbSet<User> User { get; set; }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
 		{

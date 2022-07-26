@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Calendarium.Models;
+using MySql.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace Calendarium.Controllers
 {
@@ -6,8 +9,13 @@ namespace Calendarium.Controllers
     {
         public IActionResult Index()
         {
+            var db = new UserContext();
+            var users = db.User.ToList();
+            ViewBag.Users = users;
+
             return View();
         }
+
 
     }
 

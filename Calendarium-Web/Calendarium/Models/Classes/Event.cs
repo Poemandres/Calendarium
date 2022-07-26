@@ -7,14 +7,14 @@ namespace MysqlProject.Models
 public class Event
 {
 
-		private int ID {get; set;}
-		private String? eventNAME {get; set;}
-		private DateTime eventDATE {get; set;}
-		private int eventTYPE {get; set;}
-		private int eventCATEGORY {get; set;}
-		private bool eventHOLIDAY {get; set;}
-		private int eventIMPORTANCE {get; set;}
-		private String? eventICON {get; set;}
+		public int ID {get; set;}
+		public String? eventNAME {get; set;}
+		public DateTime eventDATE {get; set;}
+		public int eventTYPE {get; set;}
+		public int eventCATEGORY {get; set;}
+		public bool eventHOLIDAY {get; set;}
+		public int eventIMPORTANCE {get; set;}
+		public String? eventICON {get; set;}
 
 	public Event(int ID, String eventNAME, DateTime eventDATE, int eventTYPE, int eventCATEGORY, bool eventHOLIDAY, int eventIMPORTANCE, String eventICON) { 
 		this.ID = ID;

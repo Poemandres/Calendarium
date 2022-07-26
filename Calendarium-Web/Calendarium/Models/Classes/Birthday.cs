@@ -7,10 +7,10 @@ namespace MysqlProject.Models
     public class Birthday
     {
 
-        private int ID { get; set; }
-        private String? birthdayNAME { get; set; }
-        private DateTime birthdayBIRTHDATE { get; set; }
-        private int birthdayBIRTHYEAR { get; set; }
+        public int ID { get; set; }
+        public String? birthdayNAME { get; set; }
+        public DateTime birthdayBIRTHDATE { get; set; }
+        public int birthdayBIRTHYEAR { get; set; }
 
 
         public Birthday(int ID, String birthdayNAME, DateTime birthdayBIRTHDATE, int birthdayBIRTHYEAR) {

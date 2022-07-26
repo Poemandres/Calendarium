@@ -7,14 +7,14 @@ namespace MysqlProject.Models
 	public class Anniversary
 	{
 
-		private int anniversaryID { get; set; }
-		private String? anniversaryNAME { get; set; }
-		private DateTime anniversaryDATE { get; set; }
-		private int anniversarySTARTYEAR { get; set; }
-		private int anniversaryTYPE { get; set; }
-		private bool anniversaryHOLIDAY { get; set; }
-		private int anniversaryIMPORTANCE { get; set; }
-		private String? anniversaryICON { get; set; }
+		public int anniversaryID { get; set; }
+		public String? anniversaryNAME { get; set; }
+		public DateTime anniversaryDATE { get; set; }
+		public int anniversarySTARTYEAR { get; set; }
+		public int anniversaryTYPE { get; set; }
+		public bool anniversaryHOLIDAY { get; set; }
+		public int anniversaryIMPORTANCE { get; set; }
+		public String? anniversaryICON { get; set; }
 
 		public Anniversary(int anniversaryID, String anniversaryNAME, DateTime anniversaryDATE, int anniversarySTARTYEAR, int anniversaryTYPE, bool anniversaryHOLIDAY,
 			int anniversaryIMPORTANCE, String anniversaryICON)

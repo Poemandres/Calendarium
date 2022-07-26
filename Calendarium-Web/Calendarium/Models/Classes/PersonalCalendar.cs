@@ -7,46 +7,46 @@ namespace MysqlProject.Models
 public class PersonalCalendar
 {
 
-		private int ID {get; set;}
-		private String? personalCalendarNAME {get; set;}
-		private int personalCalendarCATEGORY {get; set;}
-		private String? personalCalendarGROUP {get; set;}
-		private String? personalCalendarURL {get; set;}
-		private bool personalCalendarFIRST_DAY {get; set;}
-		private DateTime personalCalendarNEW_YEAR {get; set;}
-		private int personalCalendarBASE_STRUCTURE {get; set; }
-		private String? personalCalendarDAY_NAME1 { get; set; }
-		private String? personalCalendarDAY_NAME2 { get; set; }
-		private String? personalCalendarDAY_NAME3 { get; set; }
-		private String? personalCalendarDAY_NAME4 { get; set; }
-		private String? personalCalendarDAY_NAME5 { get; set; }
-		private String? personalCalendarDAY_NAME6 { get; set; }
-		private String? personalCalendarDAY_NAME7 { get; set; }
-		private String? personalCalendarDAY_NAME8 { get; set; }
-		private String? personalCalendarDAY_NAME9 { get; set; }
-		private String? personalCalendarDAY_NAME10 { get; set; }
-		private String? personalCalendarDAY_NAME11 { get; set; }
-		private String? personalCalendarDAY_NAME12 { get; set; }
-		private String? personalCalendarMONTH_NAME1 {get; set;}
-		private String? personalCalendarMONTH_NAME2 {get; set;}
-		private String? personalCalendarMONTH_NAME3 {get; set;}
-		private String? personalCalendarMONTH_NAME4 {get; set;}
-		private String? personalCalendarMONTH_NAME5 {get; set;}
-		private String? personalCalendarMONTH_NAME6 {get; set;}
-		private String? personalCalendarMONTH_NAME7 {get; set;}
-		private String? personalCalendarMONTH_NAME8 {get; set;}
-		private String? personalCalendarMONTH_NAME9 {get; set;}
-		private String? personalCalendarMONTH_NAME10 {get; set;}
-		private String? personalCalendarMONTH_NAME11 {get; set;}
-		private String? personalCalendarMONTH_NAME12 {get; set;}
-		private String? personalCalendarMONTH_NAME13 { get; set; }
-		private String? personalCalendarMONTH_NAME14 { get; set; }
-		private String? personalCalendarMONTH_NAME15 { get; set; }
-		private String? personalCalendarMONTH_NAME16 { get; set; }
-		private String? personalCalendarMONTH_NAME17 { get; set; }
-		private String? personalCalendarMONTH_NAME18 { get; set; }
-		private String? personalCalendarMONTH_NAME19 { get; set; }
-		private String? personalCalendarMONTH_NAME20 { get; set; }
+		public int ID {get; set;}
+		public String? personalCalendarNAME {get; set;}
+		public int personalCalendarCATEGORY {get; set;}
+		public String? personalCalendarGROUP {get; set;}
+		public String? personalCalendarURL {get; set;}
+		public bool personalCalendarFIRST_DAY {get; set;}
+		public DateTime personalCalendarNEW_YEAR {get; set;}
+		public int personalCalendarBASE_STRUCTURE {get; set; }
+		public String? personalCalendarDAY_NAME1 { get; set; }
+		public String? personalCalendarDAY_NAME2 { get; set; }
+		public String? personalCalendarDAY_NAME3 { get; set; }
+		public String? personalCalendarDAY_NAME4 { get; set; }
+		public String? personalCalendarDAY_NAME5 { get; set; }
+		public String? personalCalendarDAY_NAME6 { get; set; }
+		public String? personalCalendarDAY_NAME7 { get; set; }
+		public String? personalCalendarDAY_NAME8 { get; set; }
+		public String? personalCalendarDAY_NAME9 { get; set; }
+		public String? personalCalendarDAY_NAME10 { get; set; }
+		public String? personalCalendarDAY_NAME11 { get; set; }
+		public String? personalCalendarDAY_NAME12 { get; set; }
+		public String? personalCalendarMONTH_NAME1 {get; set;}
+		public String? personalCalendarMONTH_NAME2 {get; set;}
+		public String? personalCalendarMONTH_NAME3 {get; set;}
+		public String? personalCalendarMONTH_NAME4 {get; set;}
+		public String? personalCalendarMONTH_NAME5 {get; set;}
+		public String? personalCalendarMONTH_NAME6 {get; set;}
+		public String? personalCalendarMONTH_NAME7 {get; set;}
+		public String? personalCalendarMONTH_NAME8 {get; set;}
+		public String? personalCalendarMONTH_NAME9 {get; set;}
+		public String? personalCalendarMONTH_NAME10 {get; set;}
+		public String? personalCalendarMONTH_NAME11 {get; set;}
+		public String? personalCalendarMONTH_NAME12 {get; set;}
+		public String? personalCalendarMONTH_NAME13 { get; set; }
+		public String? personalCalendarMONTH_NAME14 { get; set; }
+		public String? personalCalendarMONTH_NAME15 { get; set; }
+		public String? personalCalendarMONTH_NAME16 { get; set; }
+		public String? personalCalendarMONTH_NAME17 { get; set; }
+		public String? personalCalendarMONTH_NAME18 { get; set; }
+		public String? personalCalendarMONTH_NAME19 { get; set; }
+		public String? personalCalendarMONTH_NAME20 { get; set; }
 
 	public PersonalCalendar(int ID, String personalCalendarNAME, int personalCalendarCATEGORY, String personalCalendarGROUP, String personalCalendarURL,
 		bool personalCalendarFIRST_DAY, DateTime personalCalendarNEW_YEAR, int personalCalendarBASE_STRUCTURE,

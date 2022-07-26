@@ -7,11 +7,7 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-        var db = new UserContext();
-        var usuarios = db.User.ToList();
-        ViewBag.Usuarios = usuarios;
-        <div>Usuarios ! </div>
-        @for( int i = 0; i < ViewBag.Usuarios.Count; i++){
-        <span>@ViewBag.Usuarios[i].ID -- @ViewBag.Usuarios[i].userEMAIL  -- @ViewBag.Usuarios[i].userNAME  -- @ViewBag.Usuarios[i].userPASSWORD  -- @ViewBag.Usuarios[i].userLANGUAGE 
+<div>Usuarios ! </div>
+@for( int i = 0; i < ViewBag.Users.Count; i++){
+        <span>@ViewBag.Users[i].ID -- @ViewBag.Users[i].userEMAIL  -- @ViewBag.Users[i].userNAME  -- @ViewBag.Users[i].userPASSWORD  -- @ViewBag.Users[i].userLANGUAGE 
         </span>
-}
