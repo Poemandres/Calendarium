@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-07-2022 a las 22:15:47
+-- Tiempo de generación: 27-07-2022 a las 21:40:44
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 7.4.25
 
@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `dbanniversaries`
+-- Estructura de tabla para la tabla `anniversary`
 --
 
-CREATE TABLE `dbanniversaries` (
+CREATE TABLE `anniversary` (
   `ID` int(255) NOT NULL,
   `anniversaryNAME` varchar(255) NOT NULL,
   `anniversaryDATE` datetime NOT NULL,
@@ -41,10 +41,10 @@ CREATE TABLE `dbanniversaries` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `dbbirthdays`
+-- Estructura de tabla para la tabla `birthday`
 --
 
-CREATE TABLE `dbbirthdays` (
+CREATE TABLE `birthday` (
   `ID` int(255) NOT NULL,
   `birthdayNAME` varchar(255) NOT NULL,
   `birthdayBIRTHDATE` datetime NOT NULL DEFAULT current_timestamp(),
@@ -54,10 +54,10 @@ CREATE TABLE `dbbirthdays` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `dbcustomevents`
+-- Estructura de tabla para la tabla `customevent`
 --
 
-CREATE TABLE `dbcustomevents` (
+CREATE TABLE `customevent` (
   `ID` int(255) NOT NULL,
   `customEventNAME` varchar(255) NOT NULL,
   `customEventDATE` datetime NOT NULL,
@@ -71,10 +71,10 @@ CREATE TABLE `dbcustomevents` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `dbevents`
+-- Estructura de tabla para la tabla `event`
 --
 
-CREATE TABLE `dbevents` (
+CREATE TABLE `event` (
   `ID` int(255) NOT NULL,
   `eventNAME` varchar(255) NOT NULL,
   `eventDATE` datetime NOT NULL,
@@ -88,10 +88,10 @@ CREATE TABLE `dbevents` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `dbusers`
+-- Estructura de tabla para la tabla `user`
 --
 
-CREATE TABLE `dbusers` (
+CREATE TABLE `user` (
   `ID` int(255) NOT NULL,
   `userEMAIL` varchar(55) NOT NULL,
   `userNAME` varchar(33) NOT NULL,
@@ -100,10 +100,10 @@ CREATE TABLE `dbusers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `dbusers`
+-- Volcado de datos para la tabla `user`
 --
 
-INSERT INTO `dbusers` (`ID`, `userEMAIL`, `userNAME`, `userPASSWORD`, `userLANGUAGE`) VALUES
+INSERT INTO `user` (`ID`, `userEMAIL`, `userNAME`, `userPASSWORD`, `userLANGUAGE`) VALUES
 (1, 'correisimo@correo.us', 'Shiva', 'Abc-123', 'EN');
 
 --
@@ -111,33 +111,33 @@ INSERT INTO `dbusers` (`ID`, `userEMAIL`, `userNAME`, `userPASSWORD`, `userLANGU
 --
 
 --
--- Indices de la tabla `dbanniversaries`
+-- Indices de la tabla `anniversary`
 --
-ALTER TABLE `dbanniversaries`
+ALTER TABLE `anniversary`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indices de la tabla `dbbirthdays`
+-- Indices de la tabla `birthday`
 --
-ALTER TABLE `dbbirthdays`
+ALTER TABLE `birthday`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indices de la tabla `dbcustomevents`
+-- Indices de la tabla `customevent`
 --
-ALTER TABLE `dbcustomevents`
+ALTER TABLE `customevent`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indices de la tabla `dbevents`
+-- Indices de la tabla `event`
 --
-ALTER TABLE `dbevents`
+ALTER TABLE `event`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indices de la tabla `dbusers`
+-- Indices de la tabla `user`
 --
-ALTER TABLE `dbusers`
+ALTER TABLE `user`
   ADD PRIMARY KEY (`ID`) USING BTREE;
 
 --
@@ -145,33 +145,33 @@ ALTER TABLE `dbusers`
 --
 
 --
--- AUTO_INCREMENT de la tabla `dbanniversaries`
+-- AUTO_INCREMENT de la tabla `anniversary`
 --
-ALTER TABLE `dbanniversaries`
+ALTER TABLE `anniversary`
   MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `dbbirthdays`
+-- AUTO_INCREMENT de la tabla `birthday`
 --
-ALTER TABLE `dbbirthdays`
+ALTER TABLE `birthday`
   MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `dbcustomevents`
+-- AUTO_INCREMENT de la tabla `customevent`
 --
-ALTER TABLE `dbcustomevents`
+ALTER TABLE `customevent`
   MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `dbevents`
+-- AUTO_INCREMENT de la tabla `event`
 --
-ALTER TABLE `dbevents`
+ALTER TABLE `event`
   MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `dbusers`
+-- AUTO_INCREMENT de la tabla `user`
 --
-ALTER TABLE `dbusers`
+ALTER TABLE `user`
   MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 

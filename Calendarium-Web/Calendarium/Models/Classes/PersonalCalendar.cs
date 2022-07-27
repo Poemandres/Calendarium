@@ -2,7 +2,7 @@
 using MySql.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace MysqlProject.Models
+namespace Calendarium.Models
 {
 public class PersonalCalendar
 {
