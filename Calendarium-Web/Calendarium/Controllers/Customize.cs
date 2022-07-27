@@ -9,6 +9,10 @@ namespace Calendarium.Controllers
     {
         public IActionResult Index()
         {
+            var db = new BirthdayContext();
+            var birthdays = db.dbbirthdays.ToList();
+            ViewBag.Birthdays = birthdays;
+
             return View();
         }
     }

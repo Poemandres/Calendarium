@@ -10,7 +10,7 @@ namespace Calendarium.Controllers
         public IActionResult Index()
         {
             var db = new UserContext();
-            var users = db.User.ToList();
+            var users = db.dbusers.ToList();
             ViewBag.Users = users;
 
             return View();

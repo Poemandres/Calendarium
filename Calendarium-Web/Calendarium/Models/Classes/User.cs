@@ -27,7 +27,7 @@ namespace Calendarium.Models
 	}
 	public class UserContext : DbContext
 	{
-		public DbSet<User> User { get; set; }
+		public DbSet<User> dbusers { get; set; }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
 		{
