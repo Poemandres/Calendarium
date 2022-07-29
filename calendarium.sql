@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-07-2022 a las 23:56:17
+-- Tiempo de generación: 29-07-2022 a las 19:38:47
 -- Versión del servidor: 10.4.21-MariaDB
--- Versión de PHP: 8.0.12
+-- Versión de PHP: 7.4.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,6 +41,70 @@ CREATE TABLE `dbanniversaries` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `dbbasecalendars`
+--
+
+CREATE TABLE `dbbasecalendars` (
+  `ID` int(255) NOT NULL,
+  `baseCalendarNAME` varchar(255) NOT NULL,
+  `baseCalendarCATEGORY` int(3) NOT NULL,
+  `baseCalendarGROUP` varchar(255) NOT NULL,
+  `baseCalendarURL` varchar(255) NOT NULL,
+  `baseCalendarORDER` int(3) NOT NULL,
+  `baseCalendarFIRST_DAY` tinyint(1) NOT NULL,
+  `baseCalendarNEW_YEAR` datetime NOT NULL,
+  `baseCalendarICON` varchar(255) NOT NULL,
+  `baseCalendarMONTH_AMOUNT` int(2) NOT NULL,
+  `baseCalendarDAY_AMOUNT` int(3) NOT NULL,
+  `baseCalendarLEAP_DAY_MONTH` int(2) NOT NULL,
+  `baseCalendarLEAP_DAY_PLACE` int(2) NOT NULL,
+  `baseCalendarLEAP_DAY_STARTbaseCalendarLEAP_DAY_START` int(2) NOT NULL,
+  `baseCalendarLEAP_DAY_DISTANCE` int(255) NOT NULL,
+  `baseCalendarDAY_NAME1` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME2` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME3` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME4` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME5` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME6` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME7` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME8` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME9` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME10` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME11` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME12` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME13` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME14` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME15` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME16` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME17` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME18` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME19` varchar(255) NOT NULL,
+  `baseCalendarDAY_NAME20` varchar(255) NOT NULL,
+  `baseCalendarMONTH_DURATION1` int(2) NOT NULL,
+  `baseCalendarMONTH_DURATION2` int(2) NOT NULL,
+  `baseCalendarMONTH_DURATION3` int(2) NOT NULL,
+  `baseCalendarMONTH_DURATION4` int(2) NOT NULL,
+  `baseCalendarMONTH_DURATION5` int(2) NOT NULL,
+  `baseCalendarMONTH_DURATION6` int(2) NOT NULL,
+  `baseCalendarMONTH_DURATION7` int(2) NOT NULL,
+  `baseCalendarMONTH_DURATION8` int(2) NOT NULL,
+  `baseCalendarMONTH_DURATION9` int(2) NOT NULL,
+  `baseCalendarMONTH_DURATION10` int(2) NOT NULL,
+  `baseCalendarMONTH_DURATION11` int(2) NOT NULL,
+  `baseCalendarMONTH_DURATION12` int(2) NOT NULL,
+  `baseCalendarMONTH_DURATION13` int(2) NOT NULL DEFAULT 0,
+  `baseCalendarMONTH_DURATION14` int(2) NOT NULL DEFAULT 0,
+  `baseCalendarMONTH_DURATION15` int(2) NOT NULL DEFAULT 0,
+  `baseCalendarMONTH_DURATION16` int(2) NOT NULL DEFAULT 0,
+  `baseCalendarMONTH_DURATION17` int(2) NOT NULL DEFAULT 0,
+  `baseCalendarMONTH_DURATION18` int(2) NOT NULL DEFAULT 0,
+  `baseCalendarMONTH_DURATION19` int(2) NOT NULL DEFAULT 0,
+  `baseCalendarMONTH_DURATION20` int(2) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `dbbirthdays`
 --
 
@@ -50,13 +114,6 @@ CREATE TABLE `dbbirthdays` (
   `birthdayBIRTHDATE` datetime NOT NULL DEFAULT current_timestamp(),
   `birthdayBIRTHYEAR` int(4) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `dbbirthdays`
---
-
-INSERT INTO `dbbirthdays` (`ID`, `birthdayNAME`, `birthdayBIRTHDATE`, `birthdayBIRTHYEAR`) VALUES
-(1, 'Pedro', '2022-07-29 00:00:00', 1997);
 
 -- --------------------------------------------------------
 
@@ -95,6 +152,55 @@ CREATE TABLE `dbevents` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `dbpersonalcalendars`
+--
+
+CREATE TABLE `dbpersonalcalendars` (
+  `ID` int(255) NOT NULL,
+  `personalCalendarNAME` varchar(255) NOT NULL,
+  `personalCalendarCATEGORY` int(3) NOT NULL,
+  `personalCalendarGROUP` varchar(255) NOT NULL,
+  `personalCalendarURL` varchar(255) NOT NULL,
+  `personalCalendarFIRST_DAY` tinyint(1) NOT NULL,
+  `personalCalendarNEW_YEAR` datetime NOT NULL,
+  `personalCalendarSTRUCTURE` int(255) NOT NULL,
+  `personalCalendarDAY_NAME1` varchar(255) NOT NULL,
+  `personalCalendarDAY_NAME2` varchar(255) NOT NULL,
+  `personalCalendarDAY_NAME3` varchar(255) NOT NULL,
+  `personalCalendarDAY_NAME4` varchar(255) NOT NULL,
+  `personalCalendarDAY_NAME5` varchar(255) NOT NULL,
+  `personalCalendarDAY_NAME6` varchar(255) NOT NULL,
+  `personalCalendarDAY_NAME7` varchar(255) NOT NULL,
+  `personalCalendarDAY_NAME8` varchar(255) NOT NULL,
+  `personalCalendarDAY_NAME9` varchar(255) NOT NULL,
+  `personalCalendarDAY_NAME10` varchar(255) NOT NULL,
+  `personalCalendarDAY_NAME11` varchar(255) NOT NULL,
+  `personalCalendarDAY_NAME12` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME1` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME2` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME3` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME4` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME5` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME6` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME7` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME8` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME9` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME10` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME11` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME12` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME13` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME14` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME15` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME16` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME17` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME18` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME19` varchar(255) NOT NULL,
+  `personalCalendarMONTH_NAME20` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `dbusers`
 --
 
@@ -124,6 +230,12 @@ ALTER TABLE `dbanniversaries`
   ADD PRIMARY KEY (`ID`);
 
 --
+-- Indices de la tabla `dbbasecalendars`
+--
+ALTER TABLE `dbbasecalendars`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Indices de la tabla `dbbirthdays`
 --
 ALTER TABLE `dbbirthdays`
@@ -139,6 +251,12 @@ ALTER TABLE `dbcustomevents`
 -- Indices de la tabla `dbevents`
 --
 ALTER TABLE `dbevents`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indices de la tabla `dbpersonalcalendars`
+--
+ALTER TABLE `dbpersonalcalendars`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -158,10 +276,16 @@ ALTER TABLE `dbanniversaries`
   MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT de la tabla `dbbasecalendars`
+--
+ALTER TABLE `dbbasecalendars`
+  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `dbbirthdays`
 --
 ALTER TABLE `dbbirthdays`
-  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `dbcustomevents`
@@ -173,6 +297,12 @@ ALTER TABLE `dbcustomevents`
 -- AUTO_INCREMENT de la tabla `dbevents`
 --
 ALTER TABLE `dbevents`
+  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `dbpersonalcalendars`
+--
+ALTER TABLE `dbpersonalcalendars`
   MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT;
 
 --
