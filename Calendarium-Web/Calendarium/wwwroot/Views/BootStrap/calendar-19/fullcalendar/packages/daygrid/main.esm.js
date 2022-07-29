@@ -232,7 +232,7 @@ var SimpleDayGridEventRenderer = /** @class */ (function (_super) {
             }
         }
         titleHtml =
-            '<span class="fc-title">' +
+            '<span class="fc-title texto-chico">' +
                 (htmlEscape(eventDef.title || '') || '&nbsp;') + // we always want one line of height
                 '</span>';
         return '<a class="' + classes.join(' ') + '"' +

@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-07-2022 a las 19:38:47
+-- Tiempo de generación: 29-07-2022 a las 21:39:44
 -- Versión del servidor: 10.4.21-MariaDB
--- Versión de PHP: 7.4.25
+-- Versión de PHP: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -72,14 +72,26 @@ CREATE TABLE `dbbasecalendars` (
   `baseCalendarDAY_NAME10` varchar(255) NOT NULL,
   `baseCalendarDAY_NAME11` varchar(255) NOT NULL,
   `baseCalendarDAY_NAME12` varchar(255) NOT NULL,
-  `baseCalendarDAY_NAME13` varchar(255) NOT NULL,
-  `baseCalendarDAY_NAME14` varchar(255) NOT NULL,
-  `baseCalendarDAY_NAME15` varchar(255) NOT NULL,
-  `baseCalendarDAY_NAME16` varchar(255) NOT NULL,
-  `baseCalendarDAY_NAME17` varchar(255) NOT NULL,
-  `baseCalendarDAY_NAME18` varchar(255) NOT NULL,
-  `baseCalendarDAY_NAME19` varchar(255) NOT NULL,
-  `baseCalendarDAY_NAME20` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME1` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME2` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME3` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME4` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME5` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME6` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME7` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME8` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME9` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME10` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME11` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME12` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME13` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME14` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME15` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME16` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME17` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME18` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME19` varchar(255) NOT NULL,
+  `baseCalendarMONTH_NAME20` varchar(255) NOT NULL,
   `baseCalendarMONTH_DURATION1` int(2) NOT NULL,
   `baseCalendarMONTH_DURATION2` int(2) NOT NULL,
   `baseCalendarMONTH_DURATION3` int(2) NOT NULL,
@@ -111,9 +123,16 @@ CREATE TABLE `dbbasecalendars` (
 CREATE TABLE `dbbirthdays` (
   `ID` int(255) NOT NULL,
   `birthdayNAME` varchar(255) NOT NULL,
-  `birthdayBIRTHDATE` datetime NOT NULL DEFAULT current_timestamp(),
+  `birthdayBIRTHDATE` date NOT NULL DEFAULT current_timestamp(),
   `birthdayBIRTHYEAR` int(4) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `dbbirthdays`
+--
+
+INSERT INTO `dbbirthdays` (`ID`, `birthdayNAME`, `birthdayBIRTHDATE`, `birthdayBIRTHYEAR`) VALUES
+(1, 'Pedro', '2022-07-30', 1997);
 
 -- --------------------------------------------------------
 
@@ -285,7 +304,7 @@ ALTER TABLE `dbbasecalendars`
 -- AUTO_INCREMENT de la tabla `dbbirthdays`
 --
 ALTER TABLE `dbbirthdays`
-  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `dbcustomevents`

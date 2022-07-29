@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
+    <style>
+        .texto-chico{
+            font-size: 5px;
+        }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
@@ -56,11 +61,25 @@
     <script src="@Url.Content("~/Views/BootStrap/calendar-19/fullcalendar/packages/interaction/main.js")"></script>
     <script src="@Url.Content("~/Views/BootStrap/calendar-19/fullcalendar/packages/daygrid/main.js")"></script>
     
-       
+       @inject IJsonHelper Json;
         @for( int i = 0; i < ViewBag.Birthdays.Count; i++){
         <span>@ViewBag.Birthdays[i].ID -- @ViewBag.Birthdays[i].birthdayNAME  -- @ViewBag.Birthdays[i].birthdayBIRTHDATE  -- @ViewBag.Birthdays[i].birthdayBIRTHYEAR
         </span>}
     <script>
+        
+        var array = @Html.Raw(
+        Json.Serialize(
+            ((IEnumerable<Birthday>)ViewBag.Birthdays).Select(Birthdays => new 
+            { 
+                birthdaysID = Birthdays.ID, 
+                birthdaysNAME = Birthdays.birthdayNAME, 
+                birthdaysBIRTHDATE = Birthdays.birthdayBIRTHDATE,
+                birthdaysBIRTHYEAR = Birthdays.birthdayBIRTHYEAR 
+            })
+        )
+    );
+
+
       document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
 
@@ -76,8 +95,8 @@
       events: [
         
         {
-          title: 'Cumple del Pedro',
-          start: '2022-07-29'
+          title: 'Cumple del '+array[0].birthdaysNAME+'',
+          start: ''+array[0].birthdaysBIRTHDATE+''
         },
 
         {
