@@ -1,10 +1,13 @@
+@{
+    @using MySql.Data.MySqlClient;
+}
 <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <style>
         .texto-chico{
-            font-size: 5px;
+            font-size: 10px;
         }
     </style>
     <meta charset="utf-8">
@@ -47,6 +50,7 @@
   </div>
 </div>
 
+
   <div>
     <div id='calendar'></div>
   </div>
@@ -62,11 +66,11 @@
     <script src="@Url.Content("~/Views/BootStrap/calendar-19/fullcalendar/packages/daygrid/main.js")"></script>
     
        @inject IJsonHelper Json;
-        @for( int i = 0; i < ViewBag.Birthdays.Count; i++){
-        <span>@ViewBag.Birthdays[i].ID -- @ViewBag.Birthdays[i].birthdayNAME  -- @ViewBag.Birthdays[i].birthdayBIRTHDATE  -- @ViewBag.Birthdays[i].birthdayBIRTHYEAR
-        </span>}
+       
+
     <script>
         
+        var total = @ViewBag.Birthdays.Count;
         var array = @Html.Raw(
         Json.Serialize(
             ((IEnumerable<Birthday>)ViewBag.Birthdays).Select(Birthdays => new 
@@ -91,18 +95,18 @@
       dayNames: ['Sol', 'Monday', 'Tuesday', 'Wednesday', 
            'Thursday', 'Friday', 'Saturday'],
       eventLimit: true, // allow "more" link when too many events
-
+      
       events: [
-        
+       
         {
           title: 'Cumple del '+array[0].birthdaysNAME+'',
           start: ''+array[0].birthdaysBIRTHDATE+''
         },
-
         {
-          title: 'Dinner',
-          start: '2020-02-12T20:00:00'
+          title: 'Cumple del '+array[1].birthdaysNAME+'',
+          start: ''+array[1].birthdaysBIRTHDATE+''
         }
+
       ]
     });
 
@@ -110,6 +114,43 @@
   });
 
     </script>
+    
+<div class="container">
+					<div id="form">
+						<div class="card">
+							<div class="card-header">
+								<h4>Ingresar nuevo cumpleaños:</h4>
+							</div>
+							<div class="card-body">
+								<form class="form" role="form" autocomplete="off" action="/Insert/InsertBD" method="POST">
+                                    <div class="form-group row text-center">
+										<label class="col-lg-4 col-form-label form-control-label">Nombre del cumpleañero:</label>
+										<div class="col-lg-6 text-center">
+											<input class="form-control" type="text" required name="interfazBirthdayNAME">
+										</div>
+									</div>
+									<div class="form-group row text-center">
+										<label class="col-lg-4 col-form-label form-control-label">Día del cumpleaños (EJ: 1999-7-22):</label>
+										<div class="col-lg-6 text-center">
+											<input class="form-control" type="text" name="interfazBirthdayBIRTHDATE">
+										</div>
+									</div>
+									<div class="form-group row text-center">
+										<label class="col-lg-4 col-form-label form-control-label">Año de nacimiento del cumpleañero:</label>
+										<div class="col-lg-6 text-center">
+											<input name="interfazBirthdayBIRTHYEAR" type="text" class="form-control"></input>
+										</div>
+									</div>
+									<div class="form-group row">
+										<div class="col-lg-12 text-center">
+											<input type="submit" class="btn btn-primary" value="Registrar">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+</div>
 
     <script src="@Url.Content("~/Views/BootStrap/calendar-19/js/main.js")"></script>
   </body>

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Calendarium.Models;
 using MySql.EntityFrameworkCore;
+using MySql.Data.MySqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace Calendarium.Controllers

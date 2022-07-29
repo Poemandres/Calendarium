@@ -617,7 +617,7 @@ var DayTile = /** @class */ (function (_super) {
         );
         this.el.innerHTML =
             '<div class="fc-header ' + theme.getClass('popoverHeader') + '">' +
-                '<span class="fc-title">' +
+                '<span class="fc-title texto-chico">' +
                 htmlEscape(title) +
                 '</span>' +
                 '<span class="fc-close ' + theme.getIconClass('close') + '"></span>' +

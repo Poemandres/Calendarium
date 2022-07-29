@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-07-2022 a las 21:39:44
+-- Tiempo de generación: 30-07-2022 a las 00:57:22
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 8.0.12
 
@@ -123,7 +123,7 @@ CREATE TABLE `dbbasecalendars` (
 CREATE TABLE `dbbirthdays` (
   `ID` int(255) NOT NULL,
   `birthdayNAME` varchar(255) NOT NULL,
-  `birthdayBIRTHDATE` date NOT NULL DEFAULT current_timestamp(),
+  `birthdayBIRTHDATE` datetime NOT NULL DEFAULT current_timestamp(),
   `birthdayBIRTHYEAR` int(4) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -132,7 +132,8 @@ CREATE TABLE `dbbirthdays` (
 --
 
 INSERT INTO `dbbirthdays` (`ID`, `birthdayNAME`, `birthdayBIRTHDATE`, `birthdayBIRTHYEAR`) VALUES
-(1, 'Pedro', '2022-07-30', 1997);
+(1, 'Pedro', '2022-07-30 00:00:00', 1997),
+(2, 'Daniel', '2022-07-18 00:00:00', 1993);
 
 -- --------------------------------------------------------
 
@@ -304,7 +305,7 @@ ALTER TABLE `dbbasecalendars`
 -- AUTO_INCREMENT de la tabla `dbbirthdays`
 --
 ALTER TABLE `dbbirthdays`
-  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `dbcustomevents`

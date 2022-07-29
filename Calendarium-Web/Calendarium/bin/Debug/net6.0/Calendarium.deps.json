@@ -9,6 +9,7 @@
       "Calendarium/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.7",
+          "MySql.Data": "8.0.30",
           "MySql.EntityFrameworkCore": "6.0.4",
           "Node.js": "5.3.0"
         },
